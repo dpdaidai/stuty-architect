@@ -32,7 +32,9 @@ import java.util.concurrent.TimeUnit;
  */
 public class T11_VolatileDemo {
 
-    volatile
+
+    // 不适用volatile关键字修饰 , 是无法使线程t1结束循环的
+//    volatile
     boolean running = true;
 
     void method() {

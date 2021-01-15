@@ -39,8 +39,8 @@ public class T10_Reorder {
             });
             one.start();
             other.start();
-            one.join();
-            other.join();
+            one.join();     // 等待one线程结束
+            other.join();   // 等待other线程结束
             String result = "第" + i + "次 (" + x + "," + y + "）";
             if (x == 0 && y == 0) {
                 System.err.println(result);

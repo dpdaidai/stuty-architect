@@ -14,6 +14,9 @@ package top.dpdaidai.architect.multithreading;
 public class T12_Volatile {
     public volatile int inc = 0;
 
+
+
+    //synchronized可以保证数据正确
     public
 //    synchronized
     void increase() {
