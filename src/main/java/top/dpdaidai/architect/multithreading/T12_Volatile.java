@@ -1,11 +1,15 @@
 package top.dpdaidai.architect.multithreading;
 
 /**
- * 本例子表明volatile不等于加锁, volatile仅增加了变量的可见性
+ * 本例子表明volatile不等于加锁synchronized, volatile仅增加了变量的可见性
+ *
  * <p>
  * volatile 关键字 , 使一个变量在多个线程间可见
  * 1  保证线程可见性
  * 2  禁止指令重排序
+ *      实现方式 : 通过cpu的指令实现, 为cpu增加读写屏障. 
+ *      -loadfence原语指令
+ *      -storefence原语指令
  *
  * @Author chenpantao
  * @Date 1/15/21 5:28 PM
