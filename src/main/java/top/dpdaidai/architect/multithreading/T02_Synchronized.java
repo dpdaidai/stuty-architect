@@ -1,6 +1,10 @@
 package top.dpdaidai.architect.multithreading;
 
 /**
+ *
+ * [深入理解Java并发之synchronized实现原理](https://blog.csdn.net/javazejian/article/details/72828483)
+ * TODO
+ *
  * @Author chenpantao
  * @Date 1/8/21 11:55 PM
  * @Version 1.0

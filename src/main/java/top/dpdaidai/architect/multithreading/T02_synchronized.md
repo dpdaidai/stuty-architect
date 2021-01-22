@@ -17,3 +17,6 @@ sync (Object o)
 #### 总结 
 加锁的代码执行时间短, 并等待线程少的时候可以用自旋锁,  </br>
 反之使用系统锁
+
+## 稍后对synchronized的实现深入了解
+[深入理解Java并发之synchronized实现原理](https://blog.csdn.net/javazejian/article/details/72828483)
