@@ -6,6 +6,7 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  *
  * ReentrantLock 用于替代synchronized .
+
  * ReentrantLock 在功能上更加丰富, 它拥有如下几个特点
  *      1  可重入
  *      2  可中断 :
@@ -19,6 +20,12 @@ import java.util.concurrent.locks.ReentrantLock;
  *            后来的线程就后得到锁。不公平的锁可能会产生饥饿现象。
  *          + 公平锁的意思就是，这个锁能保证线程是先来的先得到锁。
  *            虽然公平锁不会产生饥饿现象，但是公平锁的性能会比非公平锁差很多。
+ *
+ * TODO : 扩展知识
+ *  https://crossoverjie.top/2018/01/25/ReentrantLock/
+ *  https://tech.meituan.com/2019/12/05/aqs-theory-and-apply.html
+ *  CAS
+ *  AQS框架
  *
  * @Author chenpantao
  * @Date 1/23/21 9:53 PM
