@@ -7,6 +7,10 @@ import java.util.concurrent.CountDownLatch;
  *
  * 　CountDownLatch类位于java.util.concurrent包下，利用它可以实现类似计数器的功能。比如有一个任务A，它要等待其他4个任务执行完毕之后才能执行，此时就可以利用CountDownLatch来实现这种功能了。
  *
+ *　CountDownLatch和CyclicBarrier都能够实现线程之间的等待，只不过它们侧重点不同：
+ * 　　+　　CountDownLatch一般用于某个线程A等待若干个其他线程执行完任务之后，它才执行；
+ * 　　+　　而CyclicBarrier一般用于一组线程互相等待至某个状态，然后这一组线程再同时执行；
+ *
  * @Author chenpantao
  * @Date 2/1/21 9:17 PM
  * @Version 1.0
