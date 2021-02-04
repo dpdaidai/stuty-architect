@@ -24,6 +24,9 @@ import java.util.concurrent.TimeUnit;
  *      public boolean tryAcquire(int permits) { }; //尝试获取permits个许可，若获取成功，则立即返回true，若获取失败，则立即返回false
  *      public boolean tryAcquire(int permits, long timeout, TimeUnit unit) throws InterruptedException { }; //尝试获取permits个许可，若在指定的时间内获取成功，则立即返回true，否则则立即返回false
  *
+ * 使用场景 :
+ *      在目标资源有限 , 无法支持大量线程操作时, 进行限制
+ *
  * @Author chenpantao
  * @Date 2/4/21 11:12 PM
  * @Version 1.0

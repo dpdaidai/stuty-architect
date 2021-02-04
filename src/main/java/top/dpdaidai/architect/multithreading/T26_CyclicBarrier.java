@@ -20,6 +20,11 @@ import java.util.concurrent.TimeoutException;
  *      4   可在await方法中, 指定等待时间, 到达时间后, 如果有线程未完成任务, 那么已完成任务得线程会抛出一个TimeoutException异常, 其余线程抛出 BrokenBarrierException, 然后所有线程继续执行
  *      5   CyclicBarrier是可以重复使用
  *
+ *   使用场景 :
+ *      1   如果一个任务需要等到多件事情都结束后才能继续下去 .
+ *      2   比如下订单 : 1 扣除优惠券 , 2 银行卡扣款 , 3 商城收款 , 4 库存减一 . 上述4个操作分别由不同的线程执行.
+ *      3   复杂操作 : 1  数据库 , 2  网络 , 3 文件 . 本来串行效率很低, 并发执行时又需要保证原子性,
+ *
  * @Author chenpantao
  * @Date 2/1/21 10:37 PM
  * @Version 1.0
