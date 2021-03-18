@@ -10,4 +10,12 @@ class ArchitectApplicationTests {
     void contextLoads() {
     }
 
+    @Test
+    public void test1() {
+        String a = "a";
+        String b = "b";
+
+        assert "b".equals(a + b);
+        System.out.println("========== test 1 finished ============");
+    }
 }
