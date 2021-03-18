@@ -15,7 +15,7 @@ class ArchitectApplicationTests {
         String a = "a";
         String b = "b";
 
-        assert "b".equals(a + b);
+        assert "ab".equals(a + b);
         System.out.println("========== test 1 finished ============");
     }
 }
